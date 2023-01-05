@@ -1,0 +1,1 @@
+docker run --rm -p 127.0.0.1:5173:5173 -u "$(id -u):$(id -g)" -v "$(pwd):/var/www/html" -w /var/www/html node:alpine sh -c "npm run dev -- --host"
